@@ -1,0 +1,14 @@
+const createLogger = require('./logger');
+
+const logger = createLogger(
+  'http://4.224.186.213/evaluation-service/logs',
+
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJlbnNzYWkyMDA2QGdtYWlsLmNvbSIsImV4cCI6MTc3ODMxMDI1OCwiaWF0IjoxNzc4MzA5MzU4LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiNTdmYzM2NTgtNGI2MC00NjU4LWI4YWMtMTgyMGI0MmYzZDJkIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoiZW5pa2VwYWxsaSBuYXZlZW4gc3JpIHNhaSIsInN1YiI6IjYwZmViNGFkLWEyYjYtNGM5OC1hN2Y1LWI0NGJhMGIwNWQwYyJ9LCJlbWFpbCI6ImVuc3NhaTIwMDZAZ21haWwuY29tIiwibmFtZSI6ImVuaWtlcGFsbGkgbmF2ZWVuIHNyaSBzYWkiLCJyb2xsTm8iOiIyMzQ4MWE0MjI0IiwiYWNjZXNzQ29kZSI6ImVKZEN1QyIsImNsaWVudElEIjoiNjBmZWI0YWQtYTJiNi00Yzk4LWE3ZjUtYjQ0YmEwYjA1ZDBjIiwiY2xpZW50U2VjcmV0IjoiVE5YV0VIWXFoc1RQakNhcyJ9.OlCJVmNKFQT5KK3M220OjvS1bitAcep6vat_77fTee8'
+);
+
+logger(
+  'info',
+  'backend',
+  'service',
+  'Logger test successful'
+);
